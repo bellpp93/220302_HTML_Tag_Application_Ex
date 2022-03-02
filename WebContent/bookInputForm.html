@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>책 등록</title>
+</head>
+<body>
+	<caption><center>책 등록</center></caption>
+	<br />
+	<form name="bookInputForm">
+		<table width="500" align="center" border="1" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="background-color:orange">분류선택</td>
+				<td>
+					<select name="book_kind">
+						<option selected>도서 선택</option>
+						<option value="100">문학</option>
+						<option value="200">경제</option>
+						<option value="300">IT</option>
+						<option value="400">예술</option>
+						<option value="500">과학</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:orange">제목</td>
+				<td>
+					<input id="name" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:orange">가격</td>
+				<td>
+					<input id="price" type="text" /> 원
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:orange">수량</td>
+				<td>
+					<input id="amount" type="text" /> 권
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:orange">저자</td>
+				<td>
+					<input id="author" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:orange">출판사</td>
+				<td>
+					<input id="publisher" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:orange">출판일</td>
+				<td>
+					<input type="date" name="date"/>
+				</td>
+			</tr>
+			<tr>
+	    		<td style="background-color:orange">이미지</td>
+	    		<td><input type="file" name="book_image" /></td>
+			</tr>
+			<tr>
+	    		<td style="background-color:orange">내용</td>
+	    		<td><textarea name="book_content" rows="13" cols="40"></textarea></td>
+			</tr>
+			<tr>
+				<td style="background-color:orange">할인율</td>
+				<td>
+					<input id="discount" type="text" /> %
+				</td>
+			</tr>
+			<tr style="background-color:orange">
+				<td colspan="2" align="center">
+					<input type="submit" value="책등록" />
+					<input type="reset" value="다시작성" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
